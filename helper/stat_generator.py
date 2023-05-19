@@ -17,7 +17,8 @@ class Generator:
         
         return self.stats
 
-    def _count_alphabet(self, data: str) -> dict:
+    @staticmethod
+    def _count_alphabet(data: str) -> dict:
         mapper = {}
         for _chr in data:
             
