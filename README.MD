@@ -18,7 +18,7 @@ Alternatively, you can simply execute below command to let the program reads con
 ```
 pipenv run python3 -m sanitizer
 ```
-
+To make the program ready for production, we still have to implement error-handling, logging. Also, If we use Airflow, we will need a Dockerfile and secret for connecting to our source data. Having a unittest would be good in this kind of application so we can assure the trasformation logics.
 # Question 3
 SQLs for creating tables are in a folder "question_3/bq_sample_data"  
 "question_3/find_top_sales.sql" is used to find top 2 sales for each product class
