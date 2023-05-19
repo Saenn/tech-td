@@ -1,0 +1,15 @@
+# only one source at the time
+source:
+  file:
+    enable: True
+    filepath: 'input/sample.txt'
+  database:
+    enable: False
+    name: postgres
+    secret_path: 'path/to/secret' 
+
+# having more than one sink is acceptable
+sink:
+  file:
+    enable: True
+    filename: 'result.txt'
